@@ -1,0 +1,72 @@
+body{
+    height: auto;
+}
+.vnt-information{
+    width: 1200px;
+    height:930px;
+}
+.vnt-case-info{
+    height: 267px;
+    padding: 80px 0px 0px 60px;
+    border-bottom: solid 1px #c2cbd0;
+}
+.vnt-Ptn-Info{
+    height: 500px;
+    padding: 60px 0px 0px 60px;
+}
+h3.case-title{
+    width: 183px;
+    height: 28px;
+    font-family: Arial-MT;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #333333;
+    margin: 0px;
+}
+.Rectangle-262 label{
+    font-family: Arial-MT;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+.Rectangle-262 input{
+    border-radius: 0px;
+    box-shadow: none;
+    height: 32px;
+}
+.Rectangle-262 {
+    width: 305px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-right: 30px;
+}
+.vnt-case-info input{
+    border: solid 1px #d4dadf;
+}
+.vnt-Ptn-Info input{
+    border: solid 1px #d9dfe3;
+}
+.vnt-case-info label{
+    color: #1d222a;
+}
+.vnt-Ptn-Info label{
+    color: #9399a4;
+}
+
+
+
+/******* OverRide Classes ******/
+.md-whiteframe-1dp, .md-whiteframe-z1{
+    box-shadow: none;
+    border: solid 1px #d4dadf
+}
+
+md-autocomplete input:not(.md-input){
+    height: 32px;
+}
+md-autocomplete md-autocomplete-wrap{
+    height: 32px
+}

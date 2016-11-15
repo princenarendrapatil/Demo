@@ -1,0 +1,80 @@
+<div class="vnt-information" id="vntInfo">
+    <!-- Case Information Start --->
+    <div class="vnt-case-info" id="vntCaseInfo">
+        <h3 class="case-title"> Case Information</h3>
+        <div>
+            <div class="Rectangle-262 form-group">
+                <label>Accession</label>
+                <input type="text"
+                       class="form-control"
+                       ng-model="caseInfo.accession">
+            </div>
+            <div class="Rectangle-262 form-group">
+                <label>Lab Site</label>
+                <input type="text"
+                       class="form-control"
+                       ng-model="caseInfo.labSite">
+            </div>
+        </div>
+        <div>
+            <div class="Rectangle-262 form-group">
+                <label>Primary Tissue Type</label>
+                <!--<input type="text"-->
+                       <!--class="form-control"-->
+                       <!--ng-model="caseInfo.prmTissueType">-->
+                <md-autocomplete md-selected-item="caseInfo.prmTissueType"
+                                 md-search-text="searchText"
+                                 md-items="item in getMatches(searchText)"
+                                 md-item-text="item.display">
+                    <span md-highlight-text="searchText">{{item.display}}</span>
+                </md-autocomplete>
+            </div>
+            <div class="Rectangle-262 form-group">
+                <label>External Case ID</label>
+                <input type="text"
+                       class="form-control"
+                       ng-model="caseInfo.extCaseId">
+            </div>
+        </div>
+    </div>
+    <!-- Case Information End--->
+
+    <!-- Patient Information Start --->
+    <div class="vnt-Ptn-Info" id="vntPtnInfo">
+        <h3 class="case-title"> Patient Information</h3>
+        <div>
+            <div class="Rectangle-262 form-group">
+                <label>First Name</label>
+                <input type="text"
+                       class="form-control"
+                       ng-model="caseInfo.patientDetails.firstName">
+            </div>
+            <div class="Rectangle-262 form-group">
+                <label>Last Name</label>
+                <input type="text"
+                       class="form-control"
+                       ng-model="caseInfo.patientDetails.lastName">
+            </div>
+        </div>
+        <div>
+            <div class="Rectangle-262 form-group">
+                <label>Patient ID</label>
+                <input type="text"
+                       class="form-control"
+                       ng-model="caseInfo.patientDetails.id">
+            </div>
+        </div>
+    </div>
+    <!-- Patient Information End--->
+
+    <!-- Workflow Information Start --->
+    <div id="vntWrkInfo">
+
+    </div>
+    <!-- Workflow Information End--->
+</div>
+<!-- Footer Start --->
+<div id="vntFooterInfo">
+
+</div>
+<!-- Footer End--->
